@@ -9,21 +9,21 @@
 <h3>ES5</h3>
 
 ```bash
-    git clone https://github.com/TheWisker/FormatterJS
-    cd FormatterJS
-    cp -a ./out/ES5/classes/. ../destination/
-    cd ..
-    rm -fr FormatterJS
+git clone https://github.com/TheWisker/FormatterJS
+cd FormatterJS
+cp -a ./out/ES5/classes/. ../destination/
+cd ..
+rm -fr FormatterJS
 ```
 
 <h3>ES6</h3>
 
 ```bash
-    git clone https://github.com/TheWisker/FormatterJS
-    cd FormatterJS
-    cp -a ./out/ES6/module/. ../destination/
-    cd ..
-    rm -fr FormatterJS
+git clone https://github.com/TheWisker/FormatterJS
+cd FormatterJS
+cp -a ./out/ES6/module/. ../destination/
+cd ..
+rm -fr FormatterJS
 ```
 
 This series of commands install the module to the destination folder. Use one or another depending on the ES version (5 or 6) with wich it will be executed.
