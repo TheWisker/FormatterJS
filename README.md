@@ -33,7 +33,7 @@ This series of commands install the module to the destination folder. Use one or
 
 <h3>ES5</h3>
 
-Just add a script tag refering to the `Formatter` javascript file **before** any script tag that depends on it.
+Just add a script tag refering to the `Formatter` file **before** any script tag that depends on it.
 
 ```html
     <script type="text/javascript" src="/destination/Formatter.js"></script>
@@ -51,13 +51,34 @@ Just add a import statement targeting the `Formatter` file with the classes to i
 
 Create a new instance of the desired formatter:
 
-|Formatter|Constructor|Description|Example|
-|:-------:|:---------:|:---------:|:------|
-|**`UniversalFormatter`**|`(Format: string, UTC: boolean)`|Formats date and time altogether|```js
-    var Formatter = new UniversalFormatter("%Y %H"); //Formats the year and hour
-    console.log(Formatter.format()); //Prints to console the format for the current Date() object.
-```|
+|Formatter|Constructor|Description|
+|:-------:|:---------:|:----------|
+|**`UniversalFormatter`**|`(Format: string, UTC: boolean)`|Formats date and time altogether|
+|**`DateFormatter`**|`(Format: string, UTC: boolean)`|Formats only date|
+|**`TimeFormatter`**|`(Format: string, UTC: boolean)`|Formats only time|
 
+Then call the format function on the object and pass an optional date parameter.
+
+|Function|Parameters|Default|Description|
+|:------:|:--------:|:------|:----------|
+|**`format`**|`(date: Date())`|`new Date()`|Formats the date object|
+
+<h2 align="center">Examples</h2>
+
+```js
+    var Formatter = new UniversalFormatter("%Y %H"); //Formats the year and hour.
+    console.log(Formatter.format()); //Prints to console the format for the current Date() object.
+```
+
+```js
+    var Formatter = new DateFormatter("%Y %M"); //Formats the year and month.
+    console.log(Formatter.format(new Date("December 17, 1995 03:24:00"))); //Prints to console the format for the passed Date() object.
+```
+
+```js
+    var Formatter = new TimeFormatter("%H %S"); //Formats the hour and second.
+    console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints to console the format for the passed Date() object.
+```
 
 <h2 align="center">Options</h2>
 
