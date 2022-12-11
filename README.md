@@ -1,9 +1,8 @@
 <div align="center">
     <img width="200" height="200" src="assets/icon.svg">
-
-    <h1>Javascript Date Formatter</h1>
-    <p>File that simplifies formatting of dates</p>
 </div>
+<h1 align="center">Javascript Date Formatter</h1>
+<p align="center">File that simplifies formatting of dates</p>
 
 <h2 align="center">Install</h2>
 
@@ -87,4 +86,4 @@ Then call the format function on the object and pass an optional date parameter.
 <div align="center">
     <img width="200" height="200" src="assets/profile.jpg"></img>
 </div>
-<h3 align="center">Independent Programmer</h3>
+<h3 align="center">TheWisker</h3>
