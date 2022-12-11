@@ -18,6 +18,14 @@ rm -fr FormatterJS
 
 <h3>ES6</h3>
 
+Node.js:
+
+```bash
+npm i @thewisker/formatterjs
+```
+
+Manually:
+
 ```bash
 git clone https://github.com/TheWisker/FormatterJS
 cd FormatterJS
@@ -29,6 +37,7 @@ rm -fr FormatterJS
 This series of commands install the module to the destination folder. Use one or another depending on the ES version (5 or 6) with wich it will be executed.
 
 `Note: The ES6 version is up to 2 times faster.`
+`Note: All installation scripts are located under the /scripts folder.`
 
 <h2 align="center">Importing</h2>
 
@@ -43,11 +52,19 @@ Just add a script tag refering to the `Formatter` file **before** any script tag
 
 <h3>ES6</h3>
 
-Just add a import statement targeting the `Formatter` file with the classes to import between the brackets.
+With Node.js:
+
+```js
+import {UniversalFormatter, DateFormatter, TimeFormatter} from "@thewisker/formatterjs";
+```
+`Note: To run it with node.js name the file with the .mjs extension or add "type" : "module" to the package.json.`
+
+Or manually, just add a import statement targeting the `Formatter` file with the classes to import between the brackets.
 
 ```js
 import {UniversalFormatter, DateFormatter, TimeFormatter} from "/destination/Formatter.js";
 ```
+`Note: All import examples are located under the /examples folder.`
 
 <h2 align="center">Module Usage</h2>
 Create a new instance of the desired formatter:
@@ -129,6 +146,8 @@ var Formatter = new TimeFormatter("(%H-%S)"); //Formats the hour and second.
 console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints to console the format for the passed Date() object.
 ```
 `Output: (03-25)`
+
+`Note: All examples are located under the /examples folder.`
 
 <h2 align="center">Author</h2>
 <div align="center">

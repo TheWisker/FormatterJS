@@ -1,3 +1,12 @@
+/**
+ * @license FormatterJS
+ * formatter.js
+ *
+ * Copyright (c) TheWisker.
+ *
+ * This source code is licensed under the GNU license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 "use strict";
 
 function format(date, format, utc) {
@@ -16,7 +25,7 @@ function format(date, format, utc) {
     }
     
     //Literal
-    format = format.replaceAll(/(%%)/g, "%");
+    format = format.replaceAll(/(%%)/g, "\x01%\x01");
 
     //Year
     format = format.replaceAll(/(%Y)/g, utc ? date.getUTCFullYear() : date.getFullYear());
@@ -80,6 +89,9 @@ function format(date, format, utc) {
     //Timezone offset
     format = format.replaceAll(/(%T)/g, date.getTimezoneOffset() >= 0 ? "+" + zeroFormat(Math.floor(((date.getTimezoneOffset() + 1) / 60) - (1 / 60))) : "-" + zeroFormat(Math.floor(Math.abs(date.getTimezoneOffset()) / 60)));
     format = format.replaceAll(/(%t)/g, date.getTimezoneOffset() >= 0 ? "+" + Math.floor(((date.getTimezoneOffset() + 1) / 60) - (1 / 60)) : "-" + Math.floor(Math.abs(date.getTimezoneOffset()) / 60));
+
+    //Clean
+    format = format.replaceAll(/(\\x01%\\x01)/g, "%");
 
     return format;
 };

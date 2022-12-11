@@ -1,8 +1,9 @@
 {
-  "name": "formatterjs",
-  "version": "1.0.0",
+  "name": "@thewisker/formatterjs",
+  "version": "1.0.3",
   "description": "A javascript time and date formatter!",
-  "main": "src/module/Formatter.js",
+  "main": "out/ES6/module/Formatter.js",
+  "type": "module",
   "scripts": {
     "build": "babel src -d out/ES5"
   },
@@ -11,7 +12,7 @@
     "url": "git+https://github.com/TheWisker/FormatterJS.git"
   },
   "author": "TheWisker",
-  "license": "ISC",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/TheWisker/FormatterJS/issues"
   },
