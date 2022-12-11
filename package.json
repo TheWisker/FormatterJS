@@ -1,0 +1,24 @@
+{
+  "name": "formatterjs",
+  "version": "1.0.0",
+  "description": "A javascript time and date formatter!",
+  "main": "src/module/Formatter.js",
+  "scripts": {
+    "build": "babel src -d out/ES5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWisker/FormatterJS.git"
+  },
+  "author": "TheWisker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheWisker/FormatterJS/issues"
+  },
+  "homepage": "https://github.com/TheWisker/FormatterJS#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
