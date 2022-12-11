@@ -132,6 +132,6 @@ console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints 
 
 <h2 align="center">Author</h2>
 <div align="center">
-    <img width="200" height="200" src="assets/profile.jpg"></img>
+    <img width="200" height="200" src="assets/profile.png"></img>
 </div>
 <h4 align="center">TheWisker</h4>
