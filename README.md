@@ -51,12 +51,6 @@ import {UniversalFormatter, DateFormatter, TimeFormatter} from "/destination/For
 ```
 
 <h2 align="center">Usage</h2>
-<div align="center">
-    <img width="200" height="200" src="">
-
-    <h1>Javascript Date Formatter</h1>
-    <p>File that simplifies formatting of dates</p>
-</div>
 Create a new instance of the desired formatter:
 
 |Formatter|Constructor|Description|
@@ -77,21 +71,20 @@ Then call the format function on the object and pass an optional date parameter.
     var Formatter = new UniversalFormatter("%Y %H"); //Formats the year and hour.
     console.log(Formatter.format()); //Prints to console the format for the current Date() object.
 ```
-`Output: ` 2020 12
+`Output: 2020 12`
 ```js
     var Formatter = new DateFormatter("%Y %M"); //Formats the year and month.
     console.log(Formatter.format(new Date("December 17, 1995 03:24:00"))); //Prints to console the format for the passed Date() object.
 ```
-`Output: ` 2020 December
+`Output: 2020 December`
 ```js
     var Formatter = new TimeFormatter("%H %S"); //Formats the hour and second.
     console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints to console the format for the passed Date() object.
 ```
-`Output: ` 12 34
+`Output: 12 34`
 
 <h2 align="center">Author</h2>
 <div align="center">
     <img width="200" height="200" src="assets/profile.jpg"></img>
-
-    <h1>Independent Programmer</h1>
 </div>
+<h1 align="center">Independent Programmer</h1>
