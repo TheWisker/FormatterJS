@@ -1,5 +1,5 @@
 <div align="center">
-    <kbd><img width="200" height="200" src="assets/icon.svg"></kbd>
+    <img width="200" height="200" src="assets/icon.svg">
 </div>
 <h1 align="center">Javascript Date Formatter</h1>
 <p align="center">Module that simplifies the formatting of dates</p>
@@ -51,7 +51,6 @@ import {UniversalFormatter, DateFormatter, TimeFormatter} from "/destination/For
 
 <h2 align="center">Module Usage</h2>
 Create a new instance of the desired formatter:
-
 
 |Formatter|Constructor|Description|
 |:-------:|:---------:|:----------|
@@ -135,4 +134,4 @@ console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints 
 <div align="center">
     <img width="200" height="200" src="assets/profile.jpg"></img>
 </div>
-<h4 align="center" style="border-radius: 50%;">TheWisker</h4>
+<h4 align="center">TheWisker</h4>
