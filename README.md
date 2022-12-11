@@ -36,9 +36,9 @@ rm -fr FormatterJS
 
 This series of commands install the module to the destination folder. Use one or another depending on the ES version (5 or 6) with wich it will be executed.
 
-`Note:`<br>
-` · The ES6 version is up to 2 times faster.`<br>
-` · All installation scripts are located under the /scripts folder.`
+`Note:`
+    · The ES6 version is up to 2 times faster.
+    · All installation scripts are located under the /scripts folder.
 
 <h2 align="center">Importing</h2>
 
