@@ -10,16 +10,17 @@
 "use strict";
 
 function format(date, format, utc) {
-    months = {
+    const months = {
         long: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "Noemvber", "December"],
         short: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     }
-    days = {
+    const days = {
         long: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         short: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     }
 
     function zeroFormat(n, ln) {
+        n = n + "";
         while (n.length < (ln || 2)) n = "0" + n;
         return n;
     }

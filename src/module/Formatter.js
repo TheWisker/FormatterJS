@@ -19,6 +19,7 @@ class Formatter {
     }
 
     static zeroFormat(n, ln) {
+        n = n + "";
         while (n.length < (ln || 2)) n = "0" + n;
         return n;
     }
