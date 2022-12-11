@@ -1,6 +1,6 @@
 {
   "name": "@thewisker/formatterjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A javascript time and date formatter!",
   "main": "out/ES6/module/Formatter.js",
   "type": "module",
@@ -17,6 +17,9 @@
     "url": "https://github.com/TheWisker/FormatterJS/issues"
   },
   "homepage": "https://github.com/TheWisker/FormatterJS#readme",
+  "publishConfig": {
+    "@TheWisker:registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
