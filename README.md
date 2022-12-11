@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="200" height="200" src="assets/icon.svg">
+    <kbd><img width="200" height="200" src="assets/icon.svg"></kbd>
 </div>
 <h1 align="center">Javascript Date Formatter</h1>
 <p align="center">Module that simplifies the formatting of dates</p>
@@ -30,7 +30,7 @@ This series of commands install the module to the destination folder. Use one or
 
 `Note: The ES6 version is up to 2 times faster.`
 
-<h2 align="center">Import Module</h2>
+<h2 align="center">Importing</h2>
 
 <h3>ES5</h3>
 
@@ -68,13 +68,13 @@ Then call the format function on the object and pass an optional date parameter.
 <h2 align="center">Formats</h2>
 All the avaible formats equivalencies.
 
-<h3 align="center">Misc</h3>
+<h3>Misc</h3>
 
 |Format|Type|Description|Example|
 |:----:|:--:|:----------:|:----:|
 |**`%%`**|`Escape Sequence`|Escapes the % character|%|
 
-<h3 align="center">Date</h3>
+<h3>Date</h3>
 
 |Format|Type|Description|Example|
 |:----:|:--:|:----------:|:----:|
@@ -91,7 +91,7 @@ All the avaible formats equivalencies.
 |**`%a`**|`Weekday`|The name of the day|Mon|
 |**`%W`**|`Weekday`|The day of the week|1|
 
-<h3 align="center">Time</h3>
+<h3>Time</h3>
 
 |Format|Type|Description|Example|
 |:----:|:--:|:----------:|:----:|
@@ -121,18 +121,18 @@ console.log(Formatter.format()); //Prints to console the format for the current 
 ```
 `Output: 2020 12`
 ```js
-var Formatter = new DateFormatter("%Y %M"); //Formats the year and month.
+var Formatter = new DateFormatter("%Y_%B"); //Formats the year and month.
 console.log(Formatter.format(new Date("December 17, 1995 03:24:00"))); //Prints to console the format for the passed Date() object.
 ```
-`Output: 2020 December`
+`Output: 1995_December`
 ```js
-var Formatter = new TimeFormatter("%H %S"); //Formats the hour and second.
+var Formatter = new TimeFormatter("(%H-%S)"); //Formats the hour and second.
 console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints to console the format for the passed Date() object.
 ```
-`Output: 12 34`
+`Output: (03-25)`
 
 <h2 align="center">Author</h2>
 <div align="center">
     <img width="200" height="200" src="assets/profile.jpg"></img>
 </div>
-<h3 align="center" style="border-radius: 50%;">TheWisker</h3>
+<h4 align="center" style="border-radius: 50%;">TheWisker</h4>
