@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="123.52165"
+   height="123.52167"
+   viewBox="0 0 123.52165 123.52167"
+   version="1.1"
+   id="SVGRoot"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs232">
+    <linearGradient
+       id="linearGradient1517">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1513" />
+      <stop
+         style="stop-color:#848484;stop-opacity:1;"
+         offset="1"
+         id="stop1515" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1509">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1505" />
+      <stop
+         style="stop-color:#848484;stop-opacity:1;"
+         offset="1"
+         id="stop1507" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient1509"
+       id="linearGradient1511"
+       x1="57.443359"
+       y1="131.13379"
+       x2="124.46484"
+       y2="131.13379"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient1517"
+       id="linearGradient1519"
+       x1="109.02254"
+       y1="154.21562"
+       x2="145.1599"
+       y2="154.21562"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-39.030743,-67.105591)">
+    <circle
+       style="fill:#bebebe;fill-opacity:1;stroke-width:1.12808"
+       id="path1573"
+       cx="100.79157"
+       cy="128.86642"
+       r="61.76083" />
+    <circle
+       style="fill:url(#linearGradient1519);fill-opacity:1"
+       id="path704"
+       cx="127.09122"
+       cy="154.21562"
+       r="18.06868" />
+    <circle
+       style="fill:#bebebe;fill-opacity:1"
+       id="path706"
+       cx="127.3261"
+       cy="154.44199"
+       r="5.1654582" />
+    <ellipse
+       style="fill:#bebebe;fill-opacity:1"
+       id="path762"
+       cx="137.09819"
+       cy="149.04451"
+       rx="1.3712072"
+       ry="1.4988582" />
+    <path
+       id="rect919"
+       style="fill:url(#linearGradient1511);fill-opacity:1"
+       d="m 66.597656,90.451172 v 0.05859 h -9.154297 l 16.171875,28.013678 v 53.29297 H 92.382812 V 131.0293 h 19.132808 v -7.4375 H 92.382812 V 98.298828 h 32.082028 v -7.847656 z" />
+  </g>
+</svg>
