@@ -2,9 +2,9 @@
     <img width="200" height="200" src="assets/icon.svg">
 </div>
 <h1 align="center">Javascript Date Formatter</h1>
-<p align="center">File that simplifies formatting of dates</p>
+<p align="center">Module that simplifies the formatting of dates</p>
 
-<h2 align="center">Install</h2>
+<h2 align="center">Installation</h2>
 
 <h3>ES5</h3>
 
@@ -30,7 +30,7 @@ This series of commands install the module to the destination folder. Use one or
 
 `Note: The ES6 version is up to 2 times faster.`
 
-<h2 align="center">Import</h2>
+<h2 align="center">Import Module</h2>
 
 <h3>ES5</h3>
 
@@ -49,8 +49,9 @@ Just add a import statement targeting the `Formatter` file with the classes to i
 import {UniversalFormatter, DateFormatter, TimeFormatter} from "/destination/Formatter.js";
 ```
 
-<h2 align="center">Usage</h2>
+<h2 align="center">Module Usage</h2>
 Create a new instance of the desired formatter:
+
 
 |Formatter|Constructor|Description|
 |:-------:|:---------:|:----------|
@@ -64,21 +65,69 @@ Then call the format function on the object and pass an optional date parameter.
 |:------:|:--------:|:------|:----------|
 |**`format`**|`(date: Date())`|`new Date()`|Formats the date object|
 
+<h2 align="center">Formats</h2>
+All the avaible formats equivalencies.
+
+<h3 align="center">Misc</h3>
+
+|Format|Type|Description|Example|
+|:----:|:--:|:----------:|:----:|
+|**`%%`**|`Escape Sequence`|Escapes the % character|%|
+
+<h3 align="center">Date</h3>
+
+|Format|Type|Description|Example|
+|:----:|:--:|:----------:|:----:|
+|**`%Y`**|`Year`|The year|2022|
+|**`%y`**|`Year`|The short year|22 or 022|
+|**`%J`**|`Year`|The day of the year|364|
+|**`%M`**|`Month`|The month number|02|
+|**`%m`**|`Month`|The month number|2|
+|**`%B`**|`Month`|The month name|February|
+|**`%b`**|`Month`|The month short name|Feb|
+|**`%D`**|`Day`|The day of the month|08|
+|**`%d`**|`Day`|The day of the month|8|
+|**`%A`**|`Weekday`|The name of the day|Monday|
+|**`%a`**|`Weekday`|The name of the day|Mon|
+|**`%W`**|`Weekday`|The day of the week|1|
+
+<h3 align="center">Time</h3>
+
+|Format|Type|Description|Example|
+|:----:|:--:|:----------:|:----:|
+|**`%H`**|`Hour`|The hour in 24 format|20|
+|**`%h`**|`Hour`|The hour in 24 format|20|
+|**`%I`**|`Hour`|The hour in 12 format|08|
+|**`%i`**|`Hour`|The hour in 12 format|08|
+|**`%K`**|`Minutes`|The minutes|06|
+|**`%k`**|`Minutes`|The minutes|6|
+|**`%S`**|`Seconds`|The seconds|04|
+|**`%s`**|`Seconds`|The seconds|4|
+|**`%L`**|`Decisecond`|The decisecond|2|
+|**`%Q`**|`Centisecond`|The centiseconds|02|
+|**`%q`**|`Centisecond`|The centiseconds|2|
+|**`%F`**|`Milisecond`|The miliszeconds|06|
+|**`%f`**|`Milisecond`|The miliszeconds|6|
+|**`%P`**|`Timestamp`|The timestamp|AM|
+|**`%p`**|`Timestamp`|The timestamp|am|
+|**`%f`**|`Timezone Offset`|The timezone offset|+02|
+|**`%f`**|`Timezone Offset`|The timezone offset|+2|
+
 <h2 align="center">Examples</h2>
 
 ```js
-    var Formatter = new UniversalFormatter("%Y %H"); //Formats the year and hour.
-    console.log(Formatter.format()); //Prints to console the format for the current Date() object.
+var Formatter = new UniversalFormatter("%Y %H"); //Formats the year and hour.
+console.log(Formatter.format()); //Prints to console the format for the current Date() object.
 ```
 `Output: 2020 12`
 ```js
-    var Formatter = new DateFormatter("%Y %M"); //Formats the year and month.
-    console.log(Formatter.format(new Date("December 17, 1995 03:24:00"))); //Prints to console the format for the passed Date() object.
+var Formatter = new DateFormatter("%Y %M"); //Formats the year and month.
+console.log(Formatter.format(new Date("December 17, 1995 03:24:00"))); //Prints to console the format for the passed Date() object.
 ```
 `Output: 2020 December`
 ```js
-    var Formatter = new TimeFormatter("%H %S"); //Formats the hour and second.
-    console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints to console the format for the passed Date() object.
+var Formatter = new TimeFormatter("%H %S"); //Formats the hour and second.
+console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints to console the format for the passed Date() object.
 ```
 `Output: 12 34`
 
@@ -86,4 +135,4 @@ Then call the format function on the object and pass an optional date parameter.
 <div align="center">
     <img width="200" height="200" src="assets/profile.jpg"></img>
 </div>
-<h3 align="center">TheWisker</h3>
+<h3 align="center" style="border-radius: 50%;">TheWisker</h3>
