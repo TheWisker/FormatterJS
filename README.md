@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="200" height="200" src="assets/icon.svg">
+    <img width="200" height="200" src="https://github.com/TheWisker/FormatterJS/blob/master/assets/icon.svg">
 </div>
 <h1 align="center">Javascript Date Formatter</h1>
 <p align="center">Module that simplifies the formatting of dates</p>
@@ -160,6 +160,6 @@ Under the `/out/{ES5, ES6}/function` folders a `Formatter.js` files is located c
 
 <h2 align="center">Author</h2>
 <div align="center">
-    <img width="200" height="200" src="assets/profile.png"></img>
+    <img width="200" height="200" src="https://github.com/TheWisker/FormatterJS/blob/master/assets/profile.png"></img>
 </div>
 <h4 align="center">TheWisker</h4>
