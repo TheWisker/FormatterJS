@@ -149,6 +149,11 @@ console.log(Formatter.format(new Date("November 20, 1998 03:25:00"))); //Prints 
 `Output: (03-25)`
 
 `Note: All examples are located under the /examples folder.`
+<h2 align="center">Compatibility</h2>
+Under the `/out/{ES5, ES6}/function` folders a `Formatter.js` files is located containing a single function `format()` that can be used when compatibility issues arise when using classes.
+|Function|Parameters|Default|Description|
+|:------:|:--------:|:------|:----------|
+|**`format`**|`(date: Date(), format: string, utc: boolean)`|`No defaults`|Formats the date object|
 
 <h2 align="center">Author</h2>
 <div align="center">
