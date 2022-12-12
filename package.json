@@ -5,6 +5,7 @@
   "main": "out/ES6/module/Formatter.js",
   "type": "module",
   "scripts": {
+    "test": "echo No tests specified",
     "build": "babel src -d out/ES5"
   },
   "repository": {
